@@ -1,0 +1,29 @@
+{% extends 'forms.html' %}
+
+
+
+{% block body %}
+
+<div class="form-container">
+  <div class="field-container">
+      <h1>Login</h1>
+      <form method="POST">
+          {{ form.hidden_tag() }}
+          <div class="form-group">
+              <label for="username">Username</label>
+              {{ form.username }}
+          </div>
+          <div class="form-group">
+              <label for="password">Password</label>
+              {{ form.password }}
+          </div>
+          <div class="form-group">
+              {{ form.submit(class="btn-submit") }}
+          </div>
+      </form>
+      <div class="signup-link">
+          <p>Don't have an account? <a href="/register" style="color: #C5AE82; text-decoration: none;">Sign up</a></p>
+      </div>
+  </div>
+</div>
+{% endblock %}

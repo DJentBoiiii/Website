@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% block title %} Cart {% endblock %} {% block body %}
+{% if wishlist %}
+<div class="wishlist-main-part">
+  {% for item in wishlist %}
+  <div class="wishlist-item">
+    <div class="wished-product-photo">
+      <img src="{{ item.product.product_picture }}" alt="" />
+    </div>
+    <div class="wishlist-options">
+      <div class="wishlist-row">
+        <h1>{{ item.product.product_name }}</h1>
+      </div>
+      <hr>
+      <div class="wishlist-row">
+        <div class="wl-caption">
+          <h1>{{ item.product.product_type }}</h1>
+        </div>
+        <a href="" class="remove-wishlist wish-operation-btn" data-wishlist-id="{{item.id}}"><h1>Remove</h1></a>
+      </div>
+      <hr>
+      <div class="wishlist-row">
+        <div class="wl-caption">
+          <h1>Price: {{ item.product.current_price }}$</h1>
+        </div>
+        <a href="/add-to-cart/{{ item.id }}" class="wish-operation-btn">
+          <h1>Add to cart</h1>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {% endfor %} {% else %}
+  <div class="sad-container" style="color: rgb(0, 0, 0);">
+    <h1>It seems like you didn't wish anything yet</h1>
+  </div>
+</div>
+
+{% endif %} {% endblock %}

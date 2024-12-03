@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/e24507d923.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../static/css/all.min.css" />
+    <link rel="stylesheet" href="../static/css/product_card.css" />
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/product_card.css" />
+
+    <title>Amazon | {% block title %} {% endblock %}</title>
+  </head>
+  <body>
+    <header>
+      <div class="shop_header">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/">
+              <img src="../static/images/logo.png" />
+            </a>
+          </div>
+
+          <div class="navigation">
+            <form class="search-form" action="/" method="POST">
+              <input name="search" type="text" placeholder="Search" />
+            </form>
+          </div>
+          <div class="cartwishlogin">
+            <a href="/cart" class="icon-item">
+            <div >
+              Cart
+              <svg
+                class="svg-header-element"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+                viewBox="0 0 256 256"
+                xml:space="preserve"
+              >
+                <defs></defs>
+                <g
+                  transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+                >
+                  <path
+                    d="M 74.396 66.93 h -47.12 c -3.491 0 -5.549 -2.665 -5.777 -5.299 c -0.178 -2.057 0.741 -4.326 2.792 -5.506 L 16.745 22.34 c -0.132 -0.592 0.012 -1.213 0.392 -1.687 c 0.379 -0.474 0.954 -0.75 1.561 -0.75 H 88 c 0.647 0 1.256 0.314 1.631 0.842 c 0.375 0.528 0.471 1.206 0.258 1.817 l -7.983 22.876 c -0.991 2.838 -3.446 4.921 -6.406 5.438 l -48.522 8.48 c -0.006 0.001 -0.012 0.002 -0.019 0.003 c -1.499 0.267 -1.507 1.541 -1.473 1.926 c 0.033 0.386 0.261 1.644 1.792 1.644 h 47.12 c 1.104 0 2 0.896 2 2 S 75.501 66.93 74.396 66.93 z M 21.193 23.904 l 6.966 31.186 l 46.652 -8.152 c 1.533 -0.268 2.805 -1.347 3.318 -2.817 l 7.055 -20.216 H 21.193 z"
+                    transform=" matrix(1 0 0 1 0 0) "
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M 27.846 83.111 c -3.615 0 -6.555 -2.94 -6.555 -6.555 c 0 -3.615 2.94 -6.556 6.555 -6.556 s 6.556 2.94 6.556 6.556 C 34.401 80.171 31.46 83.111 27.846 83.111 z M 27.846 74.001 c -1.409 0 -2.555 1.146 -2.555 2.556 c 0 1.408 1.146 2.555 2.555 2.555 c 1.409 0 2.556 -1.146 2.556 -2.555 C 30.401 75.147 29.255 74.001 27.846 74.001 z"
+                    transform=" matrix(1 0 0 1 0 0) "
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M 68.845 83.111 c -3.615 0 -6.556 -2.94 -6.556 -6.555 c 0 -3.615 2.94 -6.556 6.556 -6.556 s 6.556 2.94 6.556 6.556 C 75.4 80.171 72.46 83.111 68.845 83.111 z M 68.845 74.001 c -1.409 0 -2.556 1.146 -2.556 2.556 c 0 1.408 1.146 2.555 2.556 2.555 s 2.556 -1.146 2.556 -2.555 C 71.4 75.147 70.254 74.001 68.845 74.001 z"
+                    transform=" matrix(1 0 0 1 0 0) "
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M 18.695 23.904 c -0.916 0 -1.742 -0.633 -1.95 -1.564 l -1.407 -6.301 c -0.677 -3.033 -3.321 -5.151 -6.428 -5.151 H 2 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 6.909 c 4.995 0 9.244 3.404 10.333 8.279 l 1.407 6.301 c 0.241 1.078 -0.438 2.147 -1.516 2.388 C 18.986 23.889 18.839 23.904 18.695 23.904 z"
+                    transform=" matrix(1 0 0 1 0 0) "
+                    stroke-linecap="round"
+                  />
+                </g>
+              </svg>
+            
+            </div>
+          </a>
+          <a href="/wishlist" class="icon-item">
+            <div >
+              Wishlist
+              <svg
+                class="svg-header-element"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                fill="#000000"
+                version="1.1"
+                id="Capa_1"
+                viewBox="0 0 471.701 471.701"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+            <div class="icon-item dropdown">
+              Account
+              <svg
+                class="svg-header-element"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+                viewBox="0 0 256 256"
+                xml:space="preserve"
+              >
+                <defs></defs>
+                <g
+                  transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+                >
+                  <path
+                    d="M 45 3 c 7.785 0 14.118 6.333 14.118 14.118 v 6.139 c 0 7.785 -6.333 14.118 -14.118 14.118 c -7.785 0 -14.118 -6.333 -14.118 -14.118 v -6.139 C 30.882 9.333 37.215 3 45 3 M 45 0 L 45 0 c -9.415 0 -17.118 7.703 -17.118 17.118 v 6.139 c 0 9.415 7.703 17.118 17.118 17.118 h 0 c 9.415 0 17.118 -7.703 17.118 -17.118 v -6.139 C 62.118 7.703 54.415 0 45 0 L 45 0 z"
+                    transform=" matrix(1 0 0 1 0 0) "
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M 55.094 45.846 c 11.177 2.112 19.497 12.057 19.497 23.501 V 87 H 15.409 V 69.347 c 0 -11.444 8.32 -21.389 19.497 -23.501 C 38.097 47.335 41.488 48.09 45 48.09 S 51.903 47.335 55.094 45.846 M 54.639 42.727 C 51.743 44.227 48.47 45.09 45 45.09 s -6.743 -0.863 -9.639 -2.363 c -12.942 1.931 -22.952 13.162 -22.952 26.619 v 17.707 c 0 1.621 1.326 2.946 2.946 2.946 h 59.29 c 1.621 0 2.946 -1.326 2.946 -2.946 V 69.347 C 77.591 55.889 67.581 44.659 54.639 42.727 L 54.639 42.727 z"
+                    transform=" matrix(1 0 0 1 0 0) "
+                    stroke-linecap="round"
+                  />
+                </g>
+              </svg>
+              <ul class="dropdown-content">
+                {% if current_user.is_authenticated and current_user.is_admin %}
+                <li>
+                  <a class="dropdown-item" href="/admin"
+                    >Admin <i class="fa-solid fa-right-from-bracket"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/profile/{{ current_user.id }}"
+                    >Profile <i class="fa-solid fa-user"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/orders"
+                    >Orders <i class="fa-solid fa-truck-fast"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/logout"
+                    >Log Out <i class="fa-solid fa-right-from-bracket"></i
+                  ></a>
+                </li>
+
+                {% elif current_user.is_authenticated %}
+                <li>
+                  <a class="dropdown-item" href="/profile/{{ current_user.id }}"
+                    >Profile <i class="fa-solid fa-user"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/orders"
+                    >Orders <i class="fa-solid fa-truck-fast"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/logout"
+                    >Log Out <i class="fa-solid fa-right-from-bracket"></i
+                  ></a>
+                </li>
+
+                {% else %}
+                <li>
+                  <a class="dropdown-item" href="/login"
+                    >Login <i class="fa-solid fa-right-to-bracket"></i
+                  ></a>
+                </li>
+
+                {% endif %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-body">
+      <div class="main-body-content">
+        {% block body %} 
+        {% endblock %}
+      </div>
+      
+    </div>
+  </div>
+  <footer>
+    <div>
+      <div class="footer-part">&copy Copyright 2024 | Oleg Makoid</div> 
+    </div>
+  </footer>
+    <!-- Йоперний насрав, ти пофіксилось! -->
+     <!-- Так і лишу ці срані коменти, хай викладач подивиться і поплаче зі мною -->
+
+    
+    <script src="{{ url_for( 'static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for( 'static', filename='js/bootstrap.min.js') }}"></script>
+    
+    <script src="{{ url_for( 'static', filename='js/myScript.js') }}"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const dropdowns = document.querySelectorAll(".dropdown");
+
+        dropdowns.forEach((dropdown) => {
+          dropdown.addEventListener("click", () => {
+            const dropdownContent = dropdown.querySelector(".dropdown-content");
+            dropdownContent.style.display =
+              dropdownContent.style.display === "block" ? "none" : "block";
+          });
+        });
+      });
+    </script>
+  </body>
+  
+</html>

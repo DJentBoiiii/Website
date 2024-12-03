@@ -1,0 +1,96 @@
+/* Загальні стилі */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Контейнер форми */
+.form-container {
+  background-color: #fdfaf5;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Контейнер для полів */
+.field-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Заголовок */
+h1 {
+  text-align: center;
+  color: #C5AE82;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Стилі для кожного поля форми */
+.form-group label {
+  font-size: 0.9rem;
+  color: #a68b68;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcc5ad;
+  color: #C5AE82;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fefaf5;
+}
+
+.form-group input:focus {
+  border-color: #C5AE82;
+  outline: none;
+}
+
+/* Кнопка надсилання */
+.btn-submit {
+  background-color: #C5AE82;
+  color: #C5AE82;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+}
+
+.btn-submit:hover {
+  background-color: #a68b68;
+  color: #ffefd2
+}
+
+/* Лінк на вхід */
+.login-link {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.login-link a {
+  color: #C5AE82;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Підсвітка елемента форми при фокусуванні */
+input:focus {
+  outline: none;
+  border-color: #C5AE82;
+}

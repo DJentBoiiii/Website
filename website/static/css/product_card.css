@@ -1,0 +1,148 @@
+
+
+
+
+.product-card
+{
+
+      background-color: rgb(255, 252, 249);
+      border-radius: 25px;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      -webkit-box-shadow: 7px 8px 29px -7px rgba(0,0,0,0.48);
+      -moz-box-shadow: 7px 8px 29px -7px rgba(0,0,0,0.48);
+      box-shadow: 7px 8px 29px -7px rgba(0,0,0,0.48);
+      margin: 5px;
+}
+
+.product-card .captionwish
+{
+      width: 100%;
+      flex: 1;
+      
+      display: flex;
+      background: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+
+}
+
+.captionwish .caption
+{
+      padding-left: 25px;
+      font-family: 'Lexend';
+      font-weight: 900;
+      font-size: x-large;
+      flex:4.2;
+      
+      align-content: center;
+}
+
+.captionwish .to-wishlist
+{
+      flex:1;
+      display: flex;
+      
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      
+      fill: rgb(0, 0, 0);
+      
+}
+
+
+.to-wishlist:hover{
+      .to-wishlist-svg
+      {
+            fill: #C5AE82;
+            transition: fill 0.2s ease;
+      }
+}
+
+.image-container {
+      flex: 5;
+      background-color: rgb(255, 255, 255);
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+}
+
+.image-container img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      width: auto; 
+      height: auto; 
+}
+
+
+.product-card .product-type
+{
+      flex: 0.5;
+      padding-left: 15px;
+      background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+
+}
+
+.product-card .quantity-price
+{
+      flex: 0.5;
+      display: flex;
+}
+
+
+.quantity-price .quantity
+{
+      flex:1;
+      
+      align-items: center;
+      
+      padding-left: 15px;
+      
+}
+
+.quantity-price .price
+{
+      flex:1;
+      text-align: right;
+      
+      align-items: center;
+      
+      
+      padding-right: 15px;
+      
+}
+
+
+.product-card .buy-putton
+{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0.5;
+      
+      width: 100%;
+}
+
+.buy-putton a
+{
+      text-decoration: none;
+      display : flex;
+      align-items: center;
+      justify-content: center;
+      color: #C5AE82;
+      border-radius: 0, 0, 25px, 25px;
+      width: 100%;
+      height: 100%;
+}
+
+.buy-putton a:hover
+{
+      
+      border-radius: 25px, 25px;
+      transition: background-color 0.4s ease;
+}
+
+
