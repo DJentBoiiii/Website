@@ -86,7 +86,6 @@ def manufacrurer_list(manufacturer):
                             if current_user.is_authenticated else []
     )
 
-# Записи програміста 03.12.2024: Застреліть мене з тим бе
 @views.route('/add-to-cart/<int:item_id>')
 @login_required
 def add_to_cart(item_id):
